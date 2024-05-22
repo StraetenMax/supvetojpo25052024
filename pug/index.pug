@@ -1,0 +1,62 @@
+extends templates/_layout
+block content
+        mj-section(padding='0')
+            mj-column
+                mj-text(mj-class='d-admin') Si vous ne parvenez pas à lire cet e-mail, cliquez #[a(href='{{ mirror }}') ici]
+        mj-section(padding='0')
+            mj-column(width='600px')
+                mj-image(padding='0' href='https://ecosup-sante.fr/supveto' src='https://img.mailinblue.com/3403292/images/content_library/original/6616f263dc35160e8de84768.jpg' target='_blank' alt='Affiche de la Journée Portes Ouvertes du samedi 25 mai 2024')/
+        //- Section Titre
+        mj-section(background-color='#ffffff' padding='0')
+            mj-column(width='530px')
+                mj-text(align='center' padding-bottom='0' mj-class='d-titre') Invitation à la Journée Portes Ouvertes
+                mj-text(align='center' padding-top='0' mj-class='d-sous-titre' text-transform='uppercase') Gagnez en compétences avec SUPVETO Lille !
+        //- texte
+        mj-section(background-color='#ffffff' padding='0')
+            mj-column(width='530px')
+                mj-text(padding-top='0' padding-bottom='0' mj-class='d-text') #[strong {{ contact.PRENOM }}], les métiers de la santé animale vous intéressent et vous souhaitez entreprendre une formation initiale ?
+                mj-text(padding-top='0' padding-bottom='0' mj-class='d-text') #[strong SUPVETO Lille] vous ouvre ses portes ce 
+                mj-text(align='center' mj-class='d-date') Samedi 25 mai de 9h30 à 13h.
+                mj-text(padding-top='0' padding-bottom='0' mj-class='d-text') Venez découvrir notre campus et rencontrer nos intervenants professionnels.
+                mj-text(padding-top='0' padding-bottom='0' mj-class='d-text') Des questions ? Alors rendez-vous ce samedi, toute notre équipe se tiendra à votre disposition pour présenter l'ensemble de nos formations.
+        mj-section(background-color='#ffffff')
+            <mj-group>
+                mj-column(width='50%' padding='8px')
+                    mj-image(align='right' padding='0' src='https://img.mailinblue.com/3403292/images/content_library/original/6616f25cc43565cc747ffea8.jpg'  width='110px' alt='Julie Kokocinski, responsable pédagogique Supveto Lille')/
+                mj-column(width='50%' padding='8px')
+                    mj-text(padding='0' mj-class='d-text') À Samedi !
+                    mj-text(padding='0' mj-class='d-text') #[strong Julie #[span(style='text-transform:uppercase') Kokocinski]]
+                    mj-text(padding='0' mj-class='d-text') Responsable pédagogique
+                    mj-text(padding='0' mj-class='d-text') Supveto Lille
+        //- Comment s'y rendre
+        mj-section(background-color='#dfdfdf')
+            mj-column(width='530px')
+                mj-text(font-size='18px' font-weight='700' color='#008853' text-transform='uppercase' mj-class='d-lieu') Comment s'y rendre ?
+                mj-text(padding-top='0' padding-bottom='0' mj-class='d-lieu') #[b(style='color:#008853') Accès Métro :] Ligne 2 - station Tourcoing Centre.
+                mj-text(padding-top='0' padding-bottom='0' mj-class='d-lieu') #[b(style='color:#008853') Accès Tramway :] Terminus Tourcoing Centre.
+                mj-text(padding-top='0' padding-bottom='0' mj-class='d-lieu') #[b(style='color:#008853') Accès Bus :] Gare routière de Tourcoing.
+                mj-text(padding-top='0' padding-bottom='0' mj-class='d-lieu') #[b(style='color:#008853') Accès Train :] Gare de Tourcoing puis station de Métro Tourcoing Centre
+                mj-text(padding-top='0' padding-bottom='0' mj-class='d-lieu') #[b(style='color:#008853') Accès Voiture :] Tourcoing centre.
+                mj-spacer(height='10px')/
+        //- Footer
+        mj-section(background-color='#008853')
+            //- Adresse
+            mj-column(width='265px')
+                mj-text(padding-top='0' padding-bottom='0' font-size='16px' font-weight='900' color='#FFFFFF' css-class='m-footer1') #[div(class='m-footer') ECOSUP CAMPUS]
+                mj-text(padding-top='0' padding-bottom='0' mj-class='d-adress' color='#FFFFFF' css-class='m-footer1') #[div(class='m-footer') 17 Place Charles et Albert Roussel,]
+                mj-text(padding-top='0' padding-bottom='0' mj-class='d-adress' css-class='m-footer1') #[div(class='m-footer') 59200 TOURCOING]
+                mj-text(padding-top='0' padding-bottom='0'  mj-class='d-adress' css-class='m-footer1') #[div(class='m-footer') 03.20.70.06.06]
+                mj-text(padding-top='0' padding-bottom='0' mj-class='d-adress' css-class='m-footer1') #[div(class='m-footer') contact@ecosup-campus.fr]
+            //- Réseaux sociaux-->
+            mj-column(width='265px')
+                mj-social(padding-top='0' padding-bottom='0' align='right' icon-size='35px' mode='horizontal' css-class='m-footer2')
+                    mj-social-element(background-color='#114222' name='facebook' href='https://www.facebook.com/SupVetoLille/')
+                    mj-social-element(background-color='#114222' name='instagram' href='https://www.instagram.com/supveto.lille')
+                    mj-social-element(background-color='#114222' name='linkedin' href='https://linkedin.com/company/ecosup-campus')
+        //- Reglement
+        mj-section
+            mj-column(width='250px')
+                mj-text(padding='0 30px' mj-class='d-admin') Cet email a été envoyé à {{contact.EMAIL}}, vous l'avez reçu car vous êtes inscrit à Ecosup Campus.
+                mj-text(padding='0 30px' mj-class='d-admin') #[a(href='{{ unsubscribe }}') Se désinscrire]
+                mj-spacer(height='20px')/
+                mj-text(padding='0 30px' mj-class='d-admin') ©2024 ECOSUP CAMPUS
