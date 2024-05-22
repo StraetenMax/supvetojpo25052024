@@ -57,10 +57,10 @@
     </mj-section>
     <mj-section background-color="#ffffff"><mj-group>
       <mj-column width="50%" padding="8px">
-        <mj-image align="right" padding="0" src="https://img.mailinblue.com/3403292/images/content_library/original/6616f25cc43565cc747ffea8.jpg" width="110px" alt="Julie Kokocinski, responsable pédagogique Supveto Lille"/>
+        <mj-image align="right" padding="0" src="https://i.ibb.co/G3fJzLp/Juliejpo25052024.jpg" width="120px" alt="Julie Kokocinski, responsable pédagogique Supveto Lille"/>
       </mj-column>
       <mj-column width="50%" padding="8px">
-        <mj-text padding="0" mj-class="d-text">À Samedi !</mj-text>
+        <mj-text padding-top="20px" padding-left="0" padding-right="0" mj-class="d-text">À Samedi !</mj-text>
         <mj-text padding="0" mj-class="d-text"><strong>Julie <span style="text-transform:uppercase">Kokocinski</span></strong></mj-text>
         <mj-text padding="0" mj-class="d-text">Responsable pédagogique</mj-text>
         <mj-text padding="0" mj-class="d-text">Supveto Lille</mj-text>
